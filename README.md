@@ -1,3 +1,5 @@
+# Code Project AI-server
+
 [![made-for-VSCode](https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg)](https://open.vscode.dev/codeproject/CodeProject.AI-Server/) [![made-with-dotnet](https://img.shields.io/badge/Made%20with-net9.0-blue)](https://dotnet.microsoft.com/) [![made-with-python](https://img.shields.io/badge/Made%20with-Python-orange)](https://www.python.org/) [![GitHub license](https://img.shields.io/badge/License-SSPL-green)](https://www.mongodb.com/licensing/server-side-public-license) [![Open Source Love svg2](https://badges.frapsoft.com/os/v2/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 <!--
 &nbsp; &nbsp;
@@ -7,34 +9,43 @@
 [![Apple Silicon](https://img.shields.io/badge/apple%20silicon-333333?style=for-the-badge&logo=apple&logoColor=white)](https://apple.com)
 -->
 
-# CodeProject.AI Server
-
  [**Download the latest version**](https://codeproject.github.io/codeproject.ai/latest.html)
 
-A standalone, self-hosted, fast, free and Open Source Artificial Intelligence microserver for any 
+A standalone, self-hosted, fast, free and Open Source Artificial Intelligence microserver for any
 platform, any language. It can be installed locally, required no off-device or out of network data
 transfer, and is easy to use.
 
 ![Object detection](https://codeproject.github.io/codeproject.ai/img/DetectThings.png)
 
-# Supported Platforms
+## Supported Platforms
 
-<div style="width:75%;min-width:700px;margin:30px auto">
+CodeProject.AI Platform Compatibility
+CodeProject.AI is available across multiple platforms and development environments:
+Operating Systems
 
-| <img src="https://codeproject.github.io/codeproject.ai/img/windows.svg" title="Windows" style="width:64px">  | <img src="https://codeproject.github.io/codeproject.ai/img/macos.svg" title="macOS" style="width:72px">  | <img src="https://codeproject.github.io/codeproject.ai/img/apple-silicon.svg" title="Apple Silicon" style="width:64px"> | <img src="https://codeproject.github.io/codeproject.ai/img/Ubuntu.svg" title="Ubuntu" style="width:64px">  | <img src="https://codeproject.github.io/codeproject.ai/img/RaspberryPi64.svg" title="Raspberry Pi arm64" style="width:64px"> | <img src="https://codeproject.github.io/codeproject.ai/img/docker.svg" title="Docker" style="width:64px">  |  <img src="https://codeproject.github.io/codeproject.ai/img/VisualStudio.svg" title="Visual Studio" style="width:64px">         |         <img src="https://codeproject.github.io/codeproject.ai/img/VisualStudioCode.svg" title="Visual Studio Code" style="width:64px">        |
-| :------: |  :---: | :---------: | :-----: | :----: | :----: | :--------------------: | :-------------------: |
-| Windows  | macOS  | macOS arm64 |  Ubuntu / Debian | Raspberry&nbsp;Pi arm64 |  Docker | Visual Studio<br>2019+ | Visual Studio<br>Code |
+Windows
+macOS (including Intel and Apple Silicon/arm64)
+Ubuntu/Debian Linux
+Raspberry Pi (arm64)
 
-</div>
+Containerization
 
+Docker
 
-# Why
+Development Environments
+
+Visual Studio 2019 and newer versions
+Visual Studio Code
+
+This cross-platform compatibility ensures that developers can work with CodeProject.AI in their preferred environment, whether they're using Windows machines, Apple computers (including the newer arm64-based systems), Linux distributions, or specialized hardware like Raspberry Pi. The platform also supports container deployment through Docker and integrates with popular development tools from Microsoft.
+
+## Why
 
 1. AI programming is something every single developer should be aware of. We wanted a fun project we could use to help teach developers and get them involved in AI. We'll be using CodeProject.AI as a focus for articles and exploration to make it fun and painless to learn AI programming.
 
-3. We got sick of fighting versions and libraries and models and being blocked by tiny annoying things every step of the way. So we put put this together so we could save you the frustration. We'll take care of the housekeeping, you focus on the code.
+2. We got sick of fighting versions and libraries and models and being blocked by tiny annoying things every step of the way. So we put put this together so we could save you the frustration. We'll take care of the housekeeping, you focus on the code.
   
-2. We also got sick of needing to sign up to potentially expensive services for AI functionality. This  is something we need, and by sharing maybe you can use it too, and hopefully add your own modules and improvements along the way.
+3. We also got sick of needing to sign up to potentially expensive services for AI functionality. This  is something we need, and by sharing maybe you can use it too, and hopefully add your own modules and improvements along the way.
 
 ## Cut to the chase: how do I play with it?
 
@@ -50,7 +61,6 @@ transfer, and is easy to use.
 3. Run the setup script in /devops/install
 4. Optionally pull all CodeProject.AI Modules by running the clone_repos script in /devops/install
 5. Debug the front-end server application (see notes below, but it's easy)
-
 
 ## How do I use it in my application?
 
@@ -84,7 +94,6 @@ function detectScene(fileChooser) {
 
 You can include the CodeProject.AI installer (or just a link to the latest version of the installer) in your own apps and installers and voila, you have an AI enabled app.
 
-
 ## What does it include?
 
 CodeProject.AI includes
@@ -117,20 +126,18 @@ We will be constantly expanding the feature list.
 3. **To focus on core use-cases**. We're deliberately not a solution for everyone. Instead we're a solution for common day-to-day needs. We will be adding dozens of modules and scores of AI capabilities to our system, but our goal is always clarity and simplicity over a 100% solution.
 4. **To tap the expertise of the Developer Community**. We're not experts but we know a developer or two out there who are. The true power of CodeProject.AI comes from the contributions and improvements from our AI community.
 
-
-#### Supported Development Environments
+### Supported Development Environments
 
 This current release works best with Visual Studio Code on Windows 10+. Ubuntu 22.04+, Debian and macOS (both Intel and Apple Silicon). Visual Studio 2019+ support is included for Windows 10+.
 
 The current release provides support for CPU on each platform, DirectML on Windows, CUDA on Windows and Linux, support for Apple Silicon GPUs, RockChip NPUs and Coral.AI TPUs. Support depends on the module itself.
 
-
 ## How to Guides
 
- - [Installing CodeProject.AI on your machine](https://codeproject.github.io/codeproject.ai/why/install_on_windows.html). For those who have CodeProject.AI integrated with Home Assist or Blue Iris
- - [Setting up the development environment](https://codeproject.github.io/codeproject.ai/devguide/install_dev.html) (spoiler: it's easy!)
- - [Running in Docker](https://codeproject.github.io/codeproject.ai/install/running_in_docker.html)
- - Setup or install issues? See the [FAQs](https://codeproject.github.io/codeproject.ai/faq/index.html)
+- [Installing CodeProject.AI on your machine](https://codeproject.github.io/codeproject.ai/why/install_on_windows.html). For those who have CodeProject.AI integrated with Home Assist or Blue Iris
+- [Setting up the development environment](https://codeproject.github.io/codeproject.ai/devguide/install_dev.html) (spoiler: it's easy!)
+- [Running in Docker](https://codeproject.github.io/codeproject.ai/install/running_in_docker.html)
+- Setup or install issues? See the [FAQs](https://codeproject.github.io/codeproject.ai/faq/index.html)
 
 I'll add this to the docs:
 
@@ -144,4 +151,3 @@ I'll add this to the docs:
 - Further macOS arm64 fixes
 - General dev environment setup fixes
 - Fixes for Windows installer when wget is missing
-
